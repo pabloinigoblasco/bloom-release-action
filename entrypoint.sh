@@ -31,6 +31,7 @@ then
 fi
 
 pkgname=${INPUT_REPOSITORY:-$(basename ${GITHUB_REPOSITORY})}
+pkgname=${pkgname,,}
 if [ $(find . -name package.xml | wc -l) -eq 1 ]
 then
   manifest=$(find . -name package.xml | head -n1)
