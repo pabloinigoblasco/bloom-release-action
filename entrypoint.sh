@@ -82,5 +82,5 @@ do
     --no-web \
     --ros-distro ${ros_distro} \
     ${options} \
-    ${INPUT_REPOSITORY:-$(basename ${GITHUB_REPOSITORY})}
+    ${pkgname}
 done
