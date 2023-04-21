@@ -76,6 +76,9 @@ do
     echo
     continue
   fi
+  
+  echo "repo1: ${INPUT_REPOSITORY:-$(basename ${GITHUB_REPOSITORY})}"
+  echo "repo2: ${pkgname}"
 
   bloom-release \
     -y \
